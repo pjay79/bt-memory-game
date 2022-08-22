@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 
 import Container from "./components/Container";
+import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import Grid from "./components/Grid";
 import Card from "./components/Card";
@@ -109,12 +110,18 @@ export default function App() {
           );
         })}
       </Grid>
-      <Button onClick={handleRestart} message="Restart" />
-      <Button
-        onClick={() => console.log(moves)}
-        message={`Score: ${moves}`}
-        style={{ marginTop: "1em" }}
-      />
+      <Wrapper>
+        <Button
+          onClick={handleRestart}
+          message="Restart"
+          style={{ marginLeft: "auto", marginRight: "0.5em" }}
+        />
+        <Button
+          onClick={() => console.log(moves)}
+          message={`Score: ${moves}`}
+          style={{ marginRight: "auto" }}
+        />
+      </Wrapper>
     </Container>
   );
 }

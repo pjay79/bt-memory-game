@@ -3,7 +3,7 @@ import styled from "styled-components";
 const SCGrid = styled.div`
   background: transparent;
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
