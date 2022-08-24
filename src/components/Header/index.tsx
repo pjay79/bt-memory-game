@@ -31,7 +31,7 @@ const Header = ({ title }: any) => {
       <img src={logo} alt="logo" height={30} />
       <div className="heading">
         <img src={thinkIcon} alt="thinking" height={20} />
-        <h4>{title}</h4>
+        <h4>{title ? title : "Braintree"}</h4>
       </div>
       <small>
         Select two cards with same content consecutively to make them vanish.
